@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Misiana Games Privacy Policy — how we handle (or don't collect) your data across our games."/>
+  <meta name="description" content="Misiana Games Privacy Policy — our offline games collect no data, show no ads, and use no trackers. Read our full commitment to your privacy."/>
   <link rel="canonical" href="https://misianagames.com/privacy-policy.html"/>
   <title>Privacy Policy – Misiana Games</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -213,8 +213,9 @@
     .pp-contact-icon { font-size: 1.3rem; }
 
     /* ── Summary Cards ── */
-    .pp-summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2.5rem; }
-    @media (max-width: 640px) { .pp-summary { grid-template-columns: 1fr; } }
+    .pp-summary { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2.5rem; }
+    @media (max-width: 860px) { .pp-summary { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .pp-summary { grid-template-columns: 1fr; } }
     .summary-card {
       background: var(--bg-card);
       border: 1px solid var(--border);
@@ -265,6 +266,7 @@
       <div class="pp-hero-meta">
         <div class="pp-meta-item">📅 Last Updated: September 2026</div>
         <div class="pp-meta-item">🏢 Misiana Games</div>
+        <div class="pp-meta-item">🔌 100% Offline</div>
         <div class="pp-meta-item">✅ COPPA Compliant</div>
       </div>
     </div>
@@ -280,11 +282,13 @@
         <ul class="toc-list">
           <li><a href="#section-intro"><span class="toc-num">00</span> Introduction</a></li>
           <li><a href="#section-1"><span class="toc-num">01</span> Zero Data Collection</a></li>
-          <li><a href="#section-2"><span class="toc-num">02</span> No Advertising</a></li>
-          <li><a href="#section-3"><span class="toc-num">03</span> Children's Privacy</a></li>
-          <li><a href="#section-4"><span class="toc-num">04</span> Third-Party Links</a></li>
-          <li><a href="#section-5"><span class="toc-num">05</span> Policy Changes</a></li>
-          <li><a href="#section-6"><span class="toc-num">06</span> Contact Us</a></li>
+          <li><a href="#section-2"><span class="toc-num">02</span> Offline Gameplay</a></li>
+          <li><a href="#section-3"><span class="toc-num">03</span> No Advertising</a></li>
+          <li><a href="#section-4"><span class="toc-num">04</span> Children's Privacy</a></li>
+          <li><a href="#section-5"><span class="toc-num">05</span> Third-Party Services</a></li>
+          <li><a href="#section-6"><span class="toc-num">06</span> Your Privacy Rights</a></li>
+          <li><a href="#section-7"><span class="toc-num">07</span> Policy Changes</a></li>
+          <li><a href="#section-8"><span class="toc-num">08</span> Contact Us</a></li>
         </ul>
       </div>
 
@@ -304,6 +308,11 @@
           <span class="sc-icon">🚫</span>
           <p class="sc-title">Zero Tracking</p>
           <p class="sc-desc">No analytics, no identifiers, no logging</p>
+        </div>
+        <div class="summary-card">
+          <span class="sc-icon">🔌</span>
+          <p class="sc-title">100% Offline</p>
+          <p class="sc-desc">No internet connection required to play</p>
         </div>
         <div class="summary-card">
           <span class="sc-icon">📵</span>
@@ -356,12 +365,31 @@
       <div class="pp-section" id="section-2">
         <div class="pp-section-header">
           <span class="pp-section-num">02</span>
+          <span class="pp-section-icon">🔌</span>
+          <h2>Offline Gameplay</h2>
+        </div>
+        <span class="pp-badge pp-badge-violet">✓ No Internet Required</span>
+        <p>
+          All Misiana Games titles are designed to run <strong style="color:var(--accent-violet);">100% offline</strong>.
+          Our games do not require, and do not request, an internet connection to be played.
+        </p>
+        <ul class="pp-bullets">
+          <li>Our apps do not request the Internet permission on your device.</li>
+          <li>No gameplay data, scores, or device information ever leaves your device — because there is no connection to send it through.</li>
+          <li>You can enjoy the full game experience on a Fire Tablet or Android device with Wi-Fi and mobile data turned off.</li>
+        </ul>
+      </div>
+
+      <!-- Section 3 -->
+      <div class="pp-section" id="section-3">
+        <div class="pp-section-header">
+          <span class="pp-section-num">03</span>
           <span class="pp-section-icon">📵</span>
           <h2>No Advertising</h2>
         </div>
-        <span class="pp-badge pp-badge-violet">✓ 100% Ad-Free</span>
+        <span class="pp-badge pp-badge-pink">✓ 100% Ad-Free</span>
         <p>
-          To provide a clean and uninterrupted user experience, our games are <strong style="color:var(--accent-violet);">100% Ad-Free</strong>.
+          To provide a clean and uninterrupted user experience, our games are <strong style="color:var(--accent-pink);">100% Ad-Free</strong>.
         </p>
         <ul class="pp-bullets">
           <li>We do not display third-party advertisements.</li>
@@ -370,37 +398,21 @@
         </ul>
       </div>
 
-      <!-- Section 3 -->
-      <div class="pp-section" id="section-3">
-        <div class="pp-section-header">
-          <span class="pp-section-num">03</span>
-          <span class="pp-section-icon">👶</span>
-          <h2>Children's Privacy</h2>
-        </div>
-        <span class="pp-badge pp-badge-pink">✓ COPPA Compliant</span>
-        <p>
-          Our games are designed for all ages and are safe for children. Since we do not collect any data,
-          our applications are fully compliant with privacy laws such as
-          <strong style="color:var(--accent-pink);">COPPA</strong> (Children's Online Privacy Protection Act).
-        </p>
-        <p>
-          Parents and guardians can be confident that their children can enjoy our games without any privacy concerns.
-        </p>
-      </div>
-
       <!-- Section 4 -->
       <div class="pp-section" id="section-4">
         <div class="pp-section-header">
           <span class="pp-section-num">04</span>
-          <span class="pp-section-icon">🔗</span>
-          <h2>Third-Party Links</h2>
+          <span class="pp-section-icon">👶</span>
+          <h2>Children's Privacy</h2>
         </div>
-        <span class="pp-badge pp-badge-teal">✓ Self-Contained</span>
+        <span class="pp-badge pp-badge-teal">✓ COPPA Compliant</span>
         <p>
-          Our games are self-contained and do not contain links to external websites or third-party services.
+          Our games are designed for all ages and are safe for children. Since we do not collect any data,
+          our applications are fully compliant with privacy laws such as
+          <strong style="color:var(--accent-teal);">COPPA</strong> (Children's Online Privacy Protection Act).
         </p>
         <p>
-          You can play with complete peace of mind knowing that no external parties are involved in your gaming experience.
+          Parents and guardians can be confident that their children can enjoy our games without any privacy concerns.
         </p>
       </div>
 
@@ -408,6 +420,44 @@
       <div class="pp-section" id="section-5">
         <div class="pp-section-header">
           <span class="pp-section-num">05</span>
+          <span class="pp-section-icon">🔗</span>
+          <h2>Third-Party Services</h2>
+        </div>
+        <span class="pp-badge pp-badge-violet">✓ Self-Contained</span>
+        <p>
+          Our games are self-contained and do not integrate any third-party SDKs, analytics libraries,
+          advertising networks, or social media plugins. They do not contain links to external websites
+          or services from within the game itself.
+        </p>
+        <p>
+          You can play with complete peace of mind knowing that no external parties are involved in your gaming experience.
+        </p>
+      </div>
+
+      <!-- Section 6 -->
+      <div class="pp-section" id="section-6">
+        <div class="pp-section-header">
+          <span class="pp-section-num">06</span>
+          <span class="pp-section-icon">⚖️</span>
+          <h2>Your Privacy Rights</h2>
+        </div>
+        <span class="pp-badge pp-badge-pink">✓ GDPR &amp; CCPA Ready</span>
+        <p>
+          Privacy laws such as the EU's <strong style="color:var(--accent-pink);">GDPR</strong> and California's
+          <strong style="color:var(--accent-pink);">CCPA</strong> give you rights over your personal data —
+          including the right to access, correct, or delete it.
+        </p>
+        <p>
+          Because Misiana Games does not collect, store, or process any personal data in the first place, there is
+          simply no data of yours held on our end to access, export, or delete. Your privacy is protected by design,
+          not by a request process.
+        </p>
+      </div>
+
+      <!-- Section 7 -->
+      <div class="pp-section" id="section-7">
+        <div class="pp-section-header">
+          <span class="pp-section-num">07</span>
           <span class="pp-section-icon">🔄</span>
           <h2>Changes to This Policy</h2>
         </div>
@@ -421,10 +471,10 @@
         </p>
       </div>
 
-      <!-- Section 6 — Contact -->
-      <div class="pp-section" id="section-6">
+      <!-- Section 8 — Contact -->
+      <div class="pp-section" id="section-8">
         <div class="pp-section-header">
-          <span class="pp-section-num">06</span>
+          <span class="pp-section-num">08</span>
           <span class="pp-section-icon">✉️</span>
           <h2>Contact Us</h2>
         </div>
